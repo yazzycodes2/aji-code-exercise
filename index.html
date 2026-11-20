@@ -195,6 +195,20 @@
     .card p:last-child { margin-bottom: 0; }
     .card-empty { min-height: 140px; }
 
+    /* Clips list: newest first */
+    .clips { list-style: none; margin: 0; padding: 0; }
+    .clip { padding: 18px 0; border-bottom: 2px dashed rgba(31, 26, 26, 0.25); }
+    .clip:first-child { padding-top: 0; }
+    .clip:last-child { border-bottom: 0; padding-bottom: 0; }
+    .clip-title { margin: 0; font-size: 1.3rem; font-weight: 600; line-height: 1.35; }
+    .clip-meta {
+      margin: 6px 0 0 !important;
+      font-family: "Gochi Hand", cursive;
+      font-size: 1.1rem;
+      letter-spacing: 0.04em;
+      color: var(--red);
+    }
+
     /* links in text get a hand-drawn underline */
     .card a:not(.button) {
       color: inherit;

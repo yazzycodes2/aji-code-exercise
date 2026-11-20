@@ -18,6 +18,7 @@ Keep every change in this style unless I ask to change it.
 - **Top of the page:** a full-width illustrated scene. My name is huge, in white with a black offset shadow, over a big orange sun on a watercolor sky. My headline sits on a ribbon banner under my name. Below is a deep-red desk with hand-drawn reporter objects (typewriter, newspapers, mug, rotary phone, notebook, lamp) in ink outlines with flat colors. Clicking the phone goes to Contact.
 - **Navigation:** About, Clips and Contact are white ribbon banners with notched ends, tilted a little and placed around the scene. They straighten and grow slightly on hover. On phones they sit in a row along the top.
 - **Sections:** each section is a cream paper card on the red background, tilted very slightly, with a strip of yellow tape at the top, a ribbon label at the top-left corner and a hard dark drop shadow.
+- **Clips:** a list inside the Clips card, newest first. Each clip shows the headline as a bold link, with the outlet and date under it in small red hand-lettering, separated by dashed lines. Add clips with the add-clip skill.
 - **Links in text:** no plain underline. They get a hand-drawn wavy magenta underline.
 - **Buttons:** a yellow pill with a thick ink outline and a hard offset shadow. It turns magenta and presses in on hover. My email address is shown this way.
 - **Drawings:** original, drawn in inline SVG inside index.html. Edges get a slight hand-drawn wobble and the sky has a paper grain.
