@@ -10,16 +10,15 @@ This repository is a journalist's personal website. GitHub Pages publishes it fr
 
 ## Site style
 
-Keep every change in this style unless I ask to change it.
+Keep every change in this style unless I ask to change it. This replaces all earlier designs; don't bring back anything from them.
 
-- **Feel:** bold, playful and hand-made, like a colorful illustrated scene or collage. Warm and personal, not corporate.
-- **Colors:** deep red (#a3122a) as the main background, a burnt-orange sun (#e0601e), a soft watercolor sky of pink, peach and light blue, cream paper (#fff8ec), near-black ink outlines (#1f1a1a), with magenta (#e2398f), yellow (#f5c518) and teal (#4f9c94) as pops of color.
-- **Fonts (Google Fonts):** Rubik Black Italic in capitals for my name; Gochi Hand, a hand-lettered font, in capitals for ribbon labels; Fraunces for body text.
-- **Top of the page:** a full-width illustrated scene. My name is huge, in white with a black offset shadow, over a big orange sun on a watercolor sky. My headline sits on a ribbon banner under my name. Below is a deep-red desk with hand-drawn reporter objects (typewriter, newspapers, mug, rotary phone, notebook, lamp) in ink outlines with flat colors. Clicking the phone goes to Contact.
-- **Navigation:** About, Clips and Contact are white ribbon banners with notched ends, tilted a little and placed around the scene. They straighten and grow slightly on hover. On phones they sit in a row along the top.
-- **Sections:** each section is a cream paper card on the red background, tilted very slightly, with a strip of yellow tape at the top, a ribbon label at the top-left corner and a hard dark drop shadow.
-- **Clips:** a list inside the Clips card, newest first. Each clip shows the headline as a bold link, with the outlet and date under it in small red hand-lettering, separated by dashed lines. Add clips with the add-clip skill.
-- **Links in text:** no plain underline. They get a hand-drawn wavy magenta underline.
-- **Buttons:** a yellow pill with a thick ink outline and a hard offset shadow. It turns magenta and presses in on hover. My email address is shown this way.
-- **Drawings:** original, drawn in inline SVG inside index.html. Edges get a slight hand-drawn wobble and the sky has a paper grain.
-- **Phones:** everything fits a phone screen with no sideways scrolling. The scene gets taller and shows fewer objects.
+- **Feel:** quiet, plain and personal, like a writer's notebook or a simple personal homepage. Text comes first. No decorations, illustrations, cards, shadows or animations.
+- **Colors:** white background (#ffffff), near-black text (#161616), grey for small details like my headline and clip dates (#5a5a5a), classic blue for links (#1a4fd6), and very light grey lines between sections (#e4e4e4).
+- **Fonts (Google Fonts):** Homemade Apple, a handwritten script, for my name only. Courier Prime, a typewriter font, for everything else, with slightly wide letter spacing.
+- **Header:** centered. My name in handwriting, my headline under it in small grey italics, then the section links (about, clips, contact) in bold lowercase.
+- **Body:** one simple reading column, about 680px wide. Section headings are large, plain and lowercase ("about", "clips", "contact"), with a thin grey line between sections.
+- **Links:** plain blue and underlined.
+- **Clips:** a plain list, newest first. The headline is a bold blue link, with the outlet and date under it in grey italics. Add clips with the add-clip skill.
+- **Contact:** one plain sentence with my email address as a link.
+- **Photos:** none yet. When I send one, save it in the images folder and show it beside my About text (stacked above it on phones), plain, with no frame or effects.
+- **Phones:** everything fits a phone screen with 16px side margins and no sideways scrolling.
