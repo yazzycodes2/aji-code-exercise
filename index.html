@@ -4,78 +4,146 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yasmeen Khan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #ffffff;
-      --text: #1a1a1a;
-      --muted: #5c5c5c;
-      --rule: #dddddd;
-      --link: #1a4fa0;
-      --placeholder-bg: #fff6d6;
-      --placeholder-border: #d9a400;
+      --bg: #fbefec;          /* soft blush */
+      --text: #1f1a1a;        /* near-black ink */
+      --muted: #6b5c5a;       /* warm grey */
+      --accent: #a3122a;      /* deep red */
+      --button-bg: #2a2626;   /* dark block */
+      --button-text: #fbefec;
     }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #121212;
-        --text: #f0f0f0;
-        --muted: #a8a8a8;
-        --rule: #333333;
-        --link: #8ab4f8;
-        --placeholder-bg: #2e2810;
-        --placeholder-border: #a88200;
-      }
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      padding: 48px 16px;
       background: var(--bg);
       color: var(--text);
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.6;
+      font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+      font-size: 1.25rem;
+      line-height: 1.7;
     }
-    main {
-      max-width: 720px;
-      margin: 0 auto;
+
+    /* Top bar: name on the left, links on the right */
+    .site-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px 32px;
+      padding: 40px 64px;
     }
-    h1 {
+    .wordmark {
       margin: 0;
-      font-size: 2.5rem;
-      font-weight: normal;
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
+    .wordmark a { color: inherit; text-decoration: none; }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 32px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 1.05rem;
+      padding-bottom: 4px;
+      border-bottom: 1.5px solid transparent;
+    }
+    nav a:hover, nav a:focus-visible { border-bottom-color: var(--text); }
+
+    /* Centered reading column */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 72px 16px 96px;
     }
     .beat {
-      margin: 4px 0 0;
-      font-size: 1.2rem;
+      margin: 6px 0 0;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+    }
+    section { scroll-margin-top: 24px; }
+    section + section { margin-top: 72px; }
+    h2 {
+      margin: 0 0 20px;
+      font-size: 1rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
       color: var(--muted);
     }
-    section {
-      margin-top: 40px;
-      padding-top: 24px;
-      border-top: 1px solid var(--rule);
+    p { margin: 0 0 1.4em; }
+
+    /* Links get a hand-drawn underline */
+    main a {
+      color: inherit;
+      text-decoration: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 8' preserveAspectRatio='none'%3E%3Cpath d='M1 5.5 C 20 3, 45 7, 70 4.5 S 95 4, 99 5' fill='none' stroke='%231f1a1a' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: 100% 0.4em;
+      background-position: 0 100%;
+      padding-bottom: 0.15em;
     }
-    h2 {
-      margin: 0 0 12px;
-      font-size: 1.4rem;
-      font-weight: normal;
+    main a:hover, main a:focus-visible { color: var(--accent); }
+
+    /* Dark block button */
+    .contact-block { text-align: center; }
+    .button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 20px 40px;
+      background: var(--button-bg);
+      color: var(--button-text) !important;
+      background-image: none !important;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      overflow-wrap: anywhere;
     }
-    .placeholder {
-      padding: 12px 16px;
-      background: var(--placeholder-bg);
-      border-left: 4px solid var(--placeholder-border);
-      font-family: system-ui, sans-serif;
-      font-size: 0.95rem;
-    }
-    a {
-      color: var(--link);
+    .button:hover, .button:focus-visible { background: var(--accent); }
+
+    @media (max-width: 640px) {
+      body { font-size: 1.15rem; }
+      .site-header { padding: 24px 16px; }
+      .wordmark { font-size: 1.9rem; }
+      nav ul { gap: 8px 20px; }
+      main { padding-top: 40px; }
+      .button { padding: 16px 20px; }
     }
   </style>
 </head>
 <body>
-  <main>
-    <header>
-      <h1>Yasmeen Khan</h1>
+  <header class="site-header">
+    <div>
+      <h1 class="wordmark"><a href="#">Yasmeen Khan</a></h1>
       <p class="beat">Reporter at The Washington Sun</p>
-    </header>
+    </div>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#clips">Clips</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
     <section id="about">
       <h2>About</h2>
       <p>Yasmeen Khan is a reporter at The Washington Sun.</p>
@@ -87,8 +155,9 @@
       <!-- Clips to be added later. -->
     </section>
 
-    <section id="contact">
-      <p>You can reach me at <a href="mailto:yasmeenkhan@washsun.com">yasmeenkhan@washsun.com</a>.</p>
+    <section id="contact" class="contact-block">
+      <p>You can reach me at</p>
+      <a class="button" href="mailto:yasmeenkhan@washsun.com">yasmeenkhan@washsun.com</a>
     </section>
   </main>
 </body>
